@@ -14,18 +14,22 @@
         <center>
           <h1>Add Post</h1>
 
-          <form method="post" action="/add_post">
-          		<input type="text" name="caption" placeholder="Caption">
-          		<input type="submit" name="Submit">
-          </form>
-          
+					<form method="post" action="/add_pet" enctype="multipart/form-data">
+
+
+					    <input type="text" name="name" placeholder="Pet Name"/>
+					    <input type="file" name="pet_pic" placeholder="Photo"/>
+					    <input type="submit" value="Submit">
+
+
+					</form>
 
         </center>
 
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p>&copy; MEET's (fake) Instagram. No rights reserved. 
+						<p>&copy; MEET's (fake) Instagram. No rights reserved.
 					</footer>
 
 			</div>

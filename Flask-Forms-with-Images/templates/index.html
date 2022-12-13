@@ -18,10 +18,10 @@
             <h2>Add posts to the meet channel!</h2>
             <br>
             <!-- About me button -->
-            <a href="/add_post"><button style="color:white;width:40%" >Add Post</button></a>
+            <a href="/add_pet"><button style="color:white;width:40%" >Add Post</button></a>
             <!--  -->
             <br> <br>
-						
+
 					</header>
 
 				<!-- Main -->
@@ -29,14 +29,23 @@
 
 						<!-- Thumbnails -->
 							<section class="thumbnails">
-                
+
                 <div>
                       <a href="">
                         <img src="static/images/thumbs/01.jpg" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+														{%if pet!=none%}
+												{%for k in pet %}
+
+												<h3>{{pet[k]['name']}}</h3>
+												<img src="static/images/thumbs/{{pet[k]['pic']}}">
+												{%endfor%}
+												{%endif%}
+										</div>
+
                       </a>
-                
-                </div>  
+
+                </div>
+
 
 							</section>
 
@@ -44,7 +53,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p>&copy; MEET's (fake) Instagram. No rights reserved. 
+						<p>&copy; MEET's (fake) Instagram. No rights reserved.
 					</footer>
 
 			</div>
